@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Produk;
 use App\Models\Umk;
 use Illuminate\Http\Request;
 
