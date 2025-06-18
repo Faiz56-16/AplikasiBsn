@@ -49,52 +49,52 @@
                                 <label>Legalistas Usaha</label>
 
                                 <div class="col-md-6 mb-3">
-                                <br>
-                                <!-- Checkbox -->
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="nib" onchange="toggleField('nib')">
-                                    <label class="form-check-label" for="nib">NIB</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="halal" onchange="toggleField('halal')">
-                                    <label class="form-check-label" for="halal">Sertifikat Halal</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="izin" onchange="toggleField('izin')">
-                                    <label class="form-check-label" for="izin">Izin Edar</label>
-                                </div>
+                                    <br>
+                                    <!-- Checkbox -->
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="nib" onchange="toggleField('nib')">
+                                        <label class="form-check-label" for="nib">NIB</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="halal" onchange="toggleField('halal')">
+                                        <label class="form-check-label" for="halal">Sertifikat Halal</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="izin" onchange="toggleField('izin')">
+                                        <label class="form-check-label" for="izin">Izin Edar</label>
+                                    </div>
 
-                                <!-- Dynamic Field: NIB -->
-                                <div id="field-nib" class="mt-2" style="display: none;">
-                                    <input type="text" name="pirt" class="form-control mb-1" placeholder="PIRT">
-                                    <input type="text" name="md" class="form-control mb-1" placeholder="MD">
-                                    <input type="text" name="skp" class="form-control mb-1" placeholder="SKP">
-                                    <input type="text" name="nkv" class="form-control mb-1" placeholder="NKV">
-                                    <input type="text" name="psat" class="form-control mb-1" placeholder="PSAT">
-                                    <input type="text" name="psah" class="form-control mb-1" placeholder="PSAH">
-                                </div>
+                                    <!-- Dynamic Field: NIB -->
+                                    <div id="field-nib" class="mt-2" style="display: none;">
+                                        <input type="text" name="pirt" class="form-control mb-1" placeholder="PIRT">
+                                        <input type="text" name="md" class="form-control mb-1" placeholder="MD">
+                                        <input type="text" name="skp" class="form-control mb-1" placeholder="SKP">
+                                        <input type="text" name="nkv" class="form-control mb-1" placeholder="NKV">
+                                        <input type="text" name="psat" class="form-control mb-1" placeholder="PSAT">
+                                        <input type="text" name="psah" class="form-control mb-1" placeholder="PSAH">
+                                    </div>
 
-                                <!-- Dynamic Field: Sertifikat Halal -->
-                                <div id="field-halal" class="mt-2" style="display: none;">
-                                    <input type="file" name="sertifikat_halal_file" class="form-control">
-                                </div>
+                                    <!-- Dynamic Field: Sertifikat Halal -->
+                                    <div id="field-halal" class="mt-2" style="display: none;">
+                                        <input type="file" name="sertifikat_halal_file" class="form-control">
+                                    </div>
 
-                                <!-- Dynamic Field: Izin Edar -->
-                                <div id="field-izin" class="mt-2" style="display: none;">
-                                    <input type="text" name="izin_edar_text" class="form-control" placeholder="Masukkan Nomor Izin Edar">
+                                    <!-- Dynamic Field: Izin Edar -->
+                                    <div id="field-izin" class="mt-2" style="display: none;">
+                                        <input type="text" name="izin_edar_text" class="form-control" placeholder="Masukkan Nomor Izin Edar">
+                                    </div>
                                 </div>
+                                <!--Script Izin Edar-->
+                                <script>
+                                    function toggleField(type) {
+                                        const checkbox = document.getElementById(type);
+                                        const field = document.getElementById('field-' + type);
+                                        field.style.display = checkbox.checked ? 'block' : 'none';
+                                    }
+                                </script>
                             </div>
-                            <!--Script Izin Edar-->
-                            <script>
-                                function toggleField(type) {
-                                    const checkbox = document.getElementById(type);
-                                    const field = document.getElementById('field-' + type);
-                                    field.style.display = checkbox.checked ? 'block' : 'none';
-                                }
-                            </script>
-                            </div>
 
-                            
+
 
                             <div class="col-md-6 mb-3">
                                 <label>Tanda Daftar Merk</label>
@@ -106,12 +106,12 @@
                                 </select>
                             </div>
 
-                           <div class="col-md-6 mb-3">
-                            <label>Struktur Organisasi</label>
-                            <textarea class="form-control mb-2" name="struktur_organisasi_teks" rows="4" placeholder="Tuliskan penjelasan atau deskripsi singkat..."></textarea>
+                            <div class="col-md-6 mb-3">
+                                <label>Struktur Organisasi</label>
+                                <textarea class="form-control mb-2" name="struktur_organisasi_teks" rows="4" placeholder="Tuliskan penjelasan atau deskripsi singkat..."></textarea>
 
-                            <input type="file" class="form-control" name="struktur_organisasi_file">
-                        </div>
+                                <input type="file" class="form-control" name="struktur_organisasi_file">
+                            </div>
 
                             <div class="col-md-6 mb-3">
                                 <label>Jumlah Tenaga Kerja</label>
@@ -130,32 +130,49 @@
                                 <input type="number" class="form-control" name=>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label>Berpotensi Ekspor? Ke Negara?</label>
-                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="nib" onchange="toggleField('nib')">
-                                    <label class="form-check-label" for="nib">NIB</label>
-                                </div>
-                                <input type="text" class="form-control" name=>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label>SNI Terkait</label>
-                                <input type="text" class="form-control" name=>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label>Peraturan Terkait</label>
-                                <input type="text" class="form-control" name=>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label>Sertifikat Lain yang Dimiliki</label>
-                                <input type="text" class="form-control" name=>
-                            </div>
-                        </div>
+                                <label>Berpotensi Ekspor? Ke Negara?</label><br>
 
-                        <a href="#" class="btn btn-primary mt-3">Kembali</a>
-                    </form>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ekspor" id="ekspor_ya" value="ya" onchange="toggleEkspor(true)">
+                                    <label class="form-check-label" for="ekspor_ya">Ya</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ekspor" id="ekspor_tidak" value="tidak" onchange="toggleEkspor(false)">
+                                    <label class="form-check-label" for="ekspor_tidak">Tidak</label>
+                                </div>
+
+                                <!-- Input negara tujuan ekspor -->
+                                <div id="negaraTujuan" class="mt-2" style="display: none;">
+                                    <input type="text" class="form-control" name="negara_tujuan" placeholder="Sebutkan negara tujuan ekspor">
+                                </div>
+                            </div>
+                            <script>
+                                function toggleEkspor(isYes) {
+                                    const field = document.getElementById('negaraTujuan');
+                                    field.style.display = isYes ? 'block' : 'none';
+                                }
+                            </script>
+                            <input type="text" class="form-control" name=>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label>SNI Terkait</label>
+                            <input type="text" class="form-control" name=>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label>Peraturan Terkait</label>
+                            <input type="text" class="form-control" name=>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label>Sertifikat Lain yang Dimiliki</label>
+                            <input type="text" class="form-control" name=>
+                        </div>
                 </div>
+
+                <a href="#" class="btn btn-primary mt-3">Kembali</a>
+                </form>
             </div>
-        </section>
     </div>
+    </section>
+</div>
 </div>
 @endsection

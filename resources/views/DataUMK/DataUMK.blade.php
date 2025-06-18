@@ -40,7 +40,12 @@
                                 <label>Alamat</label>
                                 <input type="text" class="form-control" name="alamat">
                             </div>
+                            <div class="d-flex gap-2 mt-3">
+                                <a href="" class="btn btn-warning btn-sm">Edit</a>
+                                <a href="" class="btn btn-info btn-sm text-white">Detail</a>
+                            </div>
                         </div>
+                        </form>
                 </div>
             </div>
         </section>
