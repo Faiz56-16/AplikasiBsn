@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Umk;
 use Illuminate\Http\Request;
+use App\Models\Legalitas;
 
 class Profilumk extends Controller
 {
