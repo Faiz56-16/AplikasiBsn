@@ -3,31 +3,35 @@
 namespace App\Http\Controllers;
 
 use App\Models\Umk;
-use Illuminate\Http\Request;
 use App\Models\Legalitas;
+use Illuminate\Http\Request;
 
 class Profilumk extends Controller
 {
+    // Tampilkan seluruh data UMK
     public function index()
     {
         $data_umk = Umk::all();
         return view('DataUMK.DataUMK', compact('data_umk'));
     }
 
+    // Tampilkan form tambah data
     public function create()
     {
-        $data_umk = Umk::all();
-        $legal = Legalitas::all();
-        return view('DataUMK.store', compact('data_umk', 'legal'));
+        $legal = Legalitas::all(); // bisa disesuaikan
+        return view('DataUMK.store', compact('legal'));
     }
 
+    // Tampilkan detail UMK berdasarkan ID
     public function detailumk($id)
     {
         $data_umk = Umk::findOrFail($id);
-        $Legal = Legalitas::all();
+        $legal = Legalitas::where('profil_umkm_id', $id)->first(); // ambil legalitas sesuai profil
 
-        return view('DetailUmk.detailUmk', compact('data_umk','Legal'));
+        return view('DetailUmk.detailUmk', compact('data_umk', 'legal'));
     }
+
+    // Simpan data UMK baru
     public function store(Request $request)
     {
         $validated = $request->validate([
@@ -38,10 +42,10 @@ class Profilumk extends Controller
             'volume_produksi_per_bulan' => 'required|numeric|min:0',
             'daftar_merk' => 'nullable|in:belum,sudah_mengajukan,sudah_terdaftar',
             'negara_tujuan_ekspor' => 'nullable|in:ya,tidak',
-            'negara_tujuan' => 'required_if:negara_tujuan_ekspor,ya|string',
+            'negara_tujuan' => 'required_if:negara_tujuan_ekspor,ya|string|nullable',
             'struktur_organisasi' => 'nullable|file|mimes:pdf,jpg,jpeg,png|max:2048',
 
-            // Validasi legalitas tambahan jika perlu
+            // Legalitas
             'pirt' => 'nullable|string',
             'md' => 'nullable|string',
             'skp' => 'nullable|string',
@@ -61,10 +65,8 @@ class Profilumk extends Controller
             'daftar_merk' => $request->daftar_merk,
             'negara_tujuan_ekspor' => $request->negara_tujuan_ekspor,
             'negara_tujuan' => $request->negara_tujuan,
-            // tambahkan kolom lain sesuai tabel
         ]);
 
-        // Simpan data legalitas usaha
         Legalitas::create([
             'profil_umkm_id' => $profil->id,
             'nib' => $request->has('nib'),
@@ -77,12 +79,8 @@ class Profilumk extends Controller
             'psat' => $request->psat,
             'psah' => $request->psah,
             'izin_edar' => $request->izin_edar,
-
-            
-            // Handle sertifikat halal upload
         ]);
 
-        
-        return redirect()->route('profil')->with('success', 'produk berhasil disimpan');         
+        return redirect()->route('profil')->with('success', 'Data UMK berhasil disimpan.');
     }
 }
