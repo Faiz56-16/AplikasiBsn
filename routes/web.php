@@ -15,3 +15,6 @@ use App\Http\Controllers\Dashboard;
 */
 
 Route::get('/', [Dashboard::class, 'index'])->name('dashboard');
+
+//DATA UMK
+Route::get('')
