@@ -40,10 +40,19 @@
                             </div>
                             <div class="col-12 mb-3">
                                 <label>Alamat</label>
+                               <input type="text" class="form-control" value="">
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label>Daftar Merk</label>
+                                <label>Legalistas Usaha</label>
                                 <input type="text" class="form-control" value="" >
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Izin Edar</label>
+                                <input type="text" class="form-control" value="" >
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Tanda Daftar Merk</label>
+                                <input type="number" class="form-control" value="" >
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Struktur Organisasi</label>
@@ -51,10 +60,10 @@
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Jumlah Tenaga Kerja</label>
-                                <input type="number" class="form-control" value="" >
+                                <input type="text" class="form-control" value="" >
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label>Jangkauan Distribusi</label>
+                                <label>Jangkauan Distribusi & Pemasaran</label>
                                 <input type="text" class="form-control" value="" >
                             </div>
                             <div class="col-md-6 mb-3">
@@ -62,15 +71,11 @@
                                 <input type="text" class="form-control" value="" >
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label>Volume Produksi per Bulan</label>
+                                <label>Volume Produksi/Bulan</label>
                                 <input type="text" class="form-control" value="" >
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label>Berpotensi Ekspor</label>
-                                <input type="text" class="form-control" value="" >
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label>Negara Tujuan Ekspor</label>
+                                <label>Berpotensi Ekspor? Ke Negara?</label>
                                 <input type="text" class="form-control" value="" >
                             </div>
                             <div class="col-md-6 mb-3">
@@ -82,11 +87,7 @@
                                 <input type="text" class="form-control" value="" >
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label>Sertifikasi Lain</label>
-                                <input type="text" class="form-control" value="" >
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label>Skema Sertifikasi</label>
+                                <label>Sertifikat Lain yang Dimiliki</label>
                                 <input type="text" class="form-control" value="" >
                             </div>
                         </div>
