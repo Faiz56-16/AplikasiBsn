@@ -110,10 +110,13 @@
                                 </select>
                             </div>
 
-                            <div class="col-md-6 mb-3">
-                                <label>Struktur Organisasi</label>
-                                <input type="text" class="form-control" name=>
-                            </div>
+                           <div class="col-md-6 mb-3">
+                            <label>Struktur Organisasi</label>
+                            <textarea class="form-control mb-2" name="struktur_organisasi_teks" rows="4" placeholder="Tuliskan penjelasan atau deskripsi singkat..."></textarea>
+
+                            <input type="file" class="form-control" name="struktur_organisasi_file">
+                        </div>
+                        
                             <div class="col-md-6 mb-3">
                                 <label>Jumlah Tenaga Kerja</label>
                                 <input type="text" class="form-control" name=>
