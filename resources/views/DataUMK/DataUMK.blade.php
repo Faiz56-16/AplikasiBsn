@@ -26,69 +26,89 @@
             <div class="card">
                 <div class="card-header">
                     <h4 class="card-title">Form Dummy Data UMKM</h4>
+                    <br><button type="button" class="btn btn-primary" data-toggle="modal" data-target="">
+                        Tambah Data
+                    </button></br>
                 </div>
                 <div class="card-body">
                     <form>
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label>Nama UMKM</label>
-                                <input type="text" class="form-control" value="" >
+                                <input type="text" class="form-control" name="" >
                             </div>
                             <div class="col-md-6 mb-3"> <!-- Farhat cinta guning -->
                                 <label>No HP</label>
-                                <input type="text" class="form-control" value="" >
+                                <input type="text" class="form-control" name= >
                             </div>
                             <div class="col-12 mb-3">
                                 <label>Alamat</label>
-                               <input type="text" class="form-control" value="">
+                               <input type="text" class="form-control" name=>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Legalistas Usaha</label>
-                                <input type="text" class="form-control" value="" >
+                                <input type="text" class="form-control" name= >
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Izin Edar</label>
-                                <input type="text" class="form-control" value="" >
+                                <input type="text" class="form-control" name="izin_edar">
                             </div>
+
+                           <div class="col-md-6 mb-3">
+                                <label>Izin Edar</label><br>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="dokumen[]" value="NIB" id="nib">
+                                    <label class="form-check-label" for="nib">NIB</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="dokumen[]" value="Sertifikat Halal" id="halal">
+                                    <label class="form-check-label" for="halal">Sertifikat Halal</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="dokumen[]" value="Izin Edar" id="izin">
+                                    <label class="form-check-label" for="izin">Izin Edar</label>
+                                </div>
+                            </div>
+
                             <div class="col-md-6 mb-3">
                                 <label>Tanda Daftar Merk</label>
-                                <input type="number" class="form-control" value="" >
+                                <input type="number" class="form-control" name= >
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Struktur Organisasi</label>
-                                <input type="text" class="form-control" value="" >
+                                <input type="text" class="form-control" name= >
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Jumlah Tenaga Kerja</label>
-                                <input type="text" class="form-control" value="" >
+                                <input type="text" class="form-control" name= >
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Jangkauan Distribusi & Pemasaran</label>
-                                <input type="text" class="form-control" value="" >
+                                <input type="text" class="form-control" name= >
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Permodalan</label>
-                                <input type="text" class="form-control" value="" >
+                                <input type="text" class="form-control" name= >
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Volume Produksi/Bulan</label>
-                                <input type="text" class="form-control" value="" >
+                                <input type="text" class="form-control" name= >
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Berpotensi Ekspor? Ke Negara?</label>
-                                <input type="text" class="form-control" value="" >
+                                <input type="text" class="form-control" name= >
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>SNI Terkait</label>
-                                <input type="text" class="form-control" value="" >
+                                <input type="text" class="form-control" name= >
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Peraturan Terkait</label>
-                                <input type="text" class="form-control" value="" >
+                                <input type="text" class="form-control" name= >
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Sertifikat Lain yang Dimiliki</label>
-                                <input type="text" class="form-control" value="" >
+                                <input type="text" class="form-control" name= >
                             </div>
                         </div>
 
