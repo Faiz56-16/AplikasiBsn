@@ -3,82 +3,100 @@
 @section('title', 'Profil UMKM')
 
 @section('content')
-
-<!DOCTYPE html>
-<html lang="en">
-
-<!-- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout Horizontal - Mazer Admin Dashboard</title>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-
-    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
-    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/css/app.css">
-    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
-</head> -->
-
-    <div id="app">
-        <div id="main">
-            <header class="mb-3">
-                <a href="#" class="burger-btn d-block d-xl-none">
-                    <i class="bi bi-justify fs-3"></i>
-                </a>
-            </header>
-
-            <div class="page-heading">
-                <div class="page-title">
-                    <div class="row">
-                        <div class="col-12 col-md-6 order-md-1 order-last">
-                            <h3>Profil UMKM</h3>
-                            <p class="text-subtitle text-muted">Masukkan Data Profil UMKM Anda </p>
-                        </div>
-                        <div class="col-12 col-md-6 order-md-2 order-first">
-                            <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Dashboard</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Profil UMKM</li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
+<div id="main">
+    <div class="page-heading">
+        <div class="page-title">
+            <div class="row">
+                <div class="col-12 col-md-6 order-md-1 order-last">
+                    <h3>Profil UMKM</h3>
+                    <p class="text-subtitle text-muted">Masukkan Data Profil UMKM Anda</p>
                 </div>
-                <section class="section">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Horizontal Layout - Coming Soon</h4>
-                        </div>
-                        <div class="card-body">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, commodi? Ullam quaerat
-                            similique iusto
-                            temporibus, vero aliquam praesentium, odit deserunt eaque nihil saepe hic deleniti? Placeat
-                            delectus
-                            quibusdam ratione ullam!
-                        </div>
-                    </div>
-                </section>
+                <div class="col-12 col-md-6 order-md-2 order-first">
+                    <nav class="breadcrumb-header float-start float-lg-end">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Profil UMKM</li>
+                        </ol>
+                    </nav>
+                </div>
             </div>
-
-            <footer>
-                <div class="footer clearfix mb-0 text-muted">
-                    <div class="float-start">
-                        <p>2021 &copy; Mazer</p>
-                    </div>
-                    <div class="float-end">
-                        <p>Crafted with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a
-                                href="http://ahmadsaugi.com">A. Saugi</a></p>
-                    </div>
-                </div>
-            </footer>
         </div>
+
+        <section class="section">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Form Dummy Data UMKM</h4>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label>Nama UMKM</label>
+                                <input type="text" class="form-control" value="UMKM Sari Rasa" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>No HP</label>
+                                <input type="text" class="form-control" value="081234567890" readonly>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label>Alamat</label>
+                                <textarea class="form-control" rows="2" readonly>Jl. Raya Cibadak No. 99, Sukabumi</textarea>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Daftar Merk</label>
+                                <input type="text" class="form-control" value="Sari Rasa Food" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Struktur Organisasi</label>
+                                <input type="text" class="form-control" value="Direktur - Produksi - QC - Distribusi" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Jumlah Tenaga Kerja</label>
+                                <input type="number" class="form-control" value="12" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Jangkauan Distribusi</label>
+                                <input type="text" class="form-control" value="Kabupaten Sukabumi & Sekitarnya" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Permodalan</label>
+                                <input type="text" class="form-control" value="Dana Pribadi" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Volume Produksi per Bulan</label>
+                                <input type="text" class="form-control" value="500 Kg" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Berpotensi Ekspor</label>
+                                <input type="text" class="form-control" value="Ya" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Negara Tujuan Ekspor</label>
+                                <input type="text" class="form-control" value="Malaysia, Singapura" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>SNI Terkait</label>
+                                <input type="text" class="form-control" value="SNI 01-3544-2004" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Peraturan Terkait</label>
+                                <input type="text" class="form-control" value="Peraturan BPOM RI No. 11 Tahun 2019" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Sertifikasi Lain</label>
+                                <input type="text" class="form-control" value="Sertifikat Halal, PIRT" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Skema Sertifikasi</label>
+                                <input type="text" class="form-control" value="SNI Pangan Olahan" readonly>
+                            </div>
+                        </div>
+
+                        <a href="#" class="btn btn-primary mt-3">Kembali</a>
+                    </form>
+                </div>
+            </div>
+        </section>
     </div>
-    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-
-    <script src="assets/js/main.js"></script>
-
+</div>
 @endsection
