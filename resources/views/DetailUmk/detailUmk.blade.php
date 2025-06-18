@@ -104,7 +104,7 @@
         </div>
 
         <div class="mt-3">
-            <a href="{{ route('profil.index') }}" class="btn btn-primary">Kembali</a>
+            <a href="{{ route('profil') }}" class="btn btn-primary">Kembali</a>
         </div>
     </div>
 </div>
