@@ -36,11 +36,10 @@
                             </div>
                             <div class="col-md-6 mb-3"> <!-- Farhat cinta guning -->
                                 <label>No HP</label>
-                                <input type="text" class="form-control" value="081234567890" >
+                                <input type="text" class="form-control" value="" >
                             </div>
                             <div class="col-12 mb-3">
                                 <label>Alamat</label>
-                                <textarea class="form-control" rows="2" >Jl. Raya Cibadak No. 99, Sukabumi</textarea>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Daftar Merk</label>
