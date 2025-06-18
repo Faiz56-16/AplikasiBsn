@@ -11,7 +11,7 @@ class Profilumk extends Controller
     public function index()
     {
         $data_umk = Umk::all();
-        return view('DataUMK.DataUMK');
+        return view('DataUMK.DataUMK', compact('data_umk'));
     }
 
     public function create()
@@ -22,7 +22,7 @@ class Profilumk extends Controller
     }
     public function store(Request $request)
     {
-        $validatedu = $request->validate([
+        $validated = $request->validate([
             'nama_umkm' => 'required|string|max:255',
             'no_hp' => 'required|string|max:20',
             'alamat' => 'required|string|max:255',
@@ -71,6 +71,6 @@ class Profilumk extends Controller
             'izin_edar' => $request->izin_edar,
             // Handle sertifikat halal upload
         ]);
-        return redirect()->route('profil');
+        return redirect()->route('profil');     
     }
 }
