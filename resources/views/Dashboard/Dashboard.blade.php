@@ -1,5 +1,7 @@
 @extends('Layout.Layout')
 
+@section('title', 'Dashboard')
+
 @section('content')
 
     <div id="app">

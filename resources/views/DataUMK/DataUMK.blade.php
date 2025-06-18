@@ -1,8 +1,9 @@
 @extends('Layout.Layout')
 
-@include('title', 'Profil UMK')
+@section('title', 'Profil UMKM')
 
-@include('content')
+@section('content')
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +22,6 @@
     <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
 </head> -->
 
-<body>
     <div id="app">
         <div id="sidebar" class="active">
             <div class="sidebar-wrapper active">
@@ -439,8 +439,5 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 
     <script src="assets/js/main.js"></script>
-</body>
-
-</html>
 
 @endsection
