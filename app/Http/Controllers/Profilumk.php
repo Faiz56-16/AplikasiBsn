@@ -17,8 +17,8 @@ class Profilumk extends Controller
     public function create()
     {
         $data_umk = Umk::all();
-        $legalitas = Legalitas::all();
-        return view('DataUMK.store');
+        $legal = Legalitas::all();
+        return view('DataUMK.store', compact('data_umk', 'legal'));
     }
     public function store(Request $request)
     {
