@@ -9,3 +9,4 @@ Route::get('/', [Dashboard::class, 'index'])->name('dashboard');
 
 //DATA UMK
 Route::get('/profil', [Profilumk::class ,'index'])->name('profil');
+Route::get('/profil/tambah', [Profilumk::class ,'store'])->name('profil.tambah');

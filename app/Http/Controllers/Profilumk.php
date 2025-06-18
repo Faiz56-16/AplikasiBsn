@@ -13,5 +13,10 @@ class Profilumk extends Controller
 
     }
 
+    public function store(){
+
+        return view('DataUMK.store');
+    }
+
 
 }
