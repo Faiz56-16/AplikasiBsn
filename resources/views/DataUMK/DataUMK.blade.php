@@ -36,16 +36,19 @@
                                 <label>No HP</label>
                                 <input type="text" class="form-control" name="no_hp">
                             </div>
-                            <div class="col-6 mb-3">
+
+                            <!-- Kolom Alamat dan Tombol di Satu Baris -->
+                            <div class="col-md-5 mb-3">
                                 <label>Alamat</label>
                                 <input type="text" class="form-control" name="alamat">
                             </div>
-                            <div class="d-flex gap-2 mt-3">
-                                <a href="" class="btn btn-warning btn-sm">Edit</a>
-                                <a href="" class="btn btn-info btn-sm text-white">Detail</a>
+                            <div class="col-md-1 mb-3 d-flex align-items-end">
+                               <a href="{{ route('profil.tambah') }}" class="btn btn-primary btn-sm text-white w-100" style="height: 38px;">Detail</a>
+
                             </div>
                         </div>
-                        </form>
+
+                    </form>
                 </div>
             </div>
         </section>

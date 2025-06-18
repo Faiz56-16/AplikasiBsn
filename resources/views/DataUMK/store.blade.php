@@ -35,11 +35,11 @@
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label>Nama UMKM</label>
-                                <input type="text" class="form-control" name="">
+                                <input type="text" class="form-control" name="nama_umkm">
                             </div>
                             <div class="col-md-6 mb-3"> <!-- Farhat cinta guning -->
                                 <label>No HP</label>
-                                <input type="text" class="form-control" name=>
+                                <input type="text" class="form-control" name="alamat">
                             </div>
                             <div class="col-12 mb-3">
                                 <label>Alamat</label>
@@ -152,7 +152,7 @@
                                     field.style.display = isYes ? 'block' : 'none';
                                 }
                             </script>
-                            <input type="text" class="form-control" name=>
+
                         </div>
                         <div class="col-md-6 mb-3">
                             <label>SNI Terkait</label>
@@ -160,15 +160,15 @@
                         </div>
                         <div class="col-md-6 mb-3">
                             <label>Peraturan Terkait</label>
-                            <input type="text" class="form-control" name=>
+                            <textarea class="form-control mb-2" name="" rows="4"></textarea>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label>Sertifikat Lain yang Dimiliki</label>
-                            <input type="text" class="form-control" name=>
+                            <textarea class="form-control mb-2" name="" rows="4"></textarea>
                         </div>
                 </div>
 
-                <a href="#" class="btn btn-primary mt-3">Kembali</a>
+                <a href="{{ route('profil') }}" class="btn btn-primary mt-3">Kembali</a>
                 </form>
             </div>
     </div>
