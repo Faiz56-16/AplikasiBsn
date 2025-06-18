@@ -16,7 +16,7 @@
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Profil UMKM</li>
-                        </ol>x
+                        </ol>
                     </nav>
                 </div>
             </div>
@@ -39,11 +39,11 @@
                             </div>
                             <div class="col-md-6 mb-3"> <!-- Farhat cinta guning -->
                                 <label>No HP</label>
-                                <input type="text" class="form-control" name="alamat">
+                                <input type="text" class="form-control" name="no_hp">
                             </div>
                             <div class="col-12 mb-3">
                                 <label>Alamat</label>
-                                <input type="text" class="form-control" name=>
+                                <input type="text" class="form-control" name="alamat">
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Legalistas Usaha</label>
@@ -76,12 +76,12 @@
 
                                     <!-- Dynamic Field: Sertifikat Halal -->
                                     <div id="field-halal" class="mt-2" style="display: none;">
-                                        <input type="file" name="sertifikat_halal_file" class="form-control">
+                                        <input type="file" name="" class="form-control">
                                     </div>
 
                                     <!-- Dynamic Field: Izin Edar -->
                                     <div id="field-izin" class="mt-2" style="display: none;">
-                                        <input type="text" name="izin_edar_text" class="form-control" placeholder="Masukkan Nomor Izin Edar">
+                                        <input type="text" name="" class="form-control" placeholder="Masukkan Nomor Izin Edar">
                                     </div>
                                 </div>
                                 <!--Script Izin Edar-->
@@ -98,7 +98,7 @@
 
                             <div class="col-md-6 mb-3">
                                 <label>Tanda Daftar Merk</label>
-                                <select class="form-control" name="tanda_daftar_merk">
+                                <select class="form-control" name="daftar_merk">
                                     <option value="">-- Pilih Status --</option>
                                     <option value="belum">Belum</option>
                                     <option value="sudah_mengajukan">Sudah Mengajukan</option>
@@ -108,36 +108,36 @@
 
                             <div class="col-md-6 mb-3">
                                 <label>Struktur Organisasi</label>
-                                <textarea class="form-control mb-2" name="struktur_organisasi_teks" rows="4" placeholder="Tuliskan penjelasan atau deskripsi singkat..."></textarea>
+                                <textarea class="form-control mb-2" name="" rows="4" placeholder="Tuliskan penjelasan atau deskripsi singkat..."></textarea>
 
-                                <input type="file" class="form-control" name="struktur_organisasi_file">
+                                <input type="file" class="form-control" name="struktur_organisasi">
                             </div>
 
                             <div class="col-md-6 mb-3">
                                 <label>Jumlah Tenaga Kerja</label>
-                                <input type="number" class="form-control" name=>
+                                <input type="number" class="form-control" name="jumlah_tenaga_kerja">
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Jangkauan Distribusi & Pemasaran</label>
-                                <textarea class="form-control mb-2" name="jangkauan_distribusi_pemasaran_teks" rows="4" placeholder="Daerah pemasaran lokal,luar kota, ekspor..."></textarea>
+                                <textarea class="form-control mb-2" name="jangkauan_distribusi" rows="4" placeholder="Daerah pemasaran lokal,luar kota, ekspor..."></textarea>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Permodalan</label>
-                                <textarea class="form-control mb-2" name="" rows="4"></textarea>
+                                <textarea class="form-control mb-2" name="permodalan" rows="4"></textarea>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Volume Produksi/Bulan</label>
-                                <input type="number" class="form-control" name=>
+                                <input type="number" class="form-control" name="volume_produksi_per_bulan">
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Berpotensi Ekspor? Ke Negara?</label><br>
 
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="ekspor" id="ekspor_ya" value="ya" onchange="toggleEkspor(true)">
+                                    <input class="form-check-input" type="radio" name="negara_tujuan_ekspor" id="ekspor_ya" value="ya" onchange="toggleEkspor(true)">
                                     <label class="form-check-label" for="ekspor_ya">Ya</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="ekspor" id="ekspor_tidak" value="tidak" onchange="toggleEkspor(false)">
+                                    <input class="form-check-input" type="radio" name="negara_tujuan_ekspor" id="ekspor_tidak" value="tidak" onchange="toggleEkspor(false)">
                                     <label class="form-check-label" for="ekspor_tidak">Tidak</label>
                                 </div>
 
@@ -156,15 +156,15 @@
                         </div>
                         <div class="col-md-6 mb-3">
                             <label>SNI Terkait</label>
-                            <input type="text" class="form-control" name=>
+                            <input type="text" class="form-control" name="sni_terkait">
                         </div>
                         <div class="col-md-6 mb-3">
                             <label>Peraturan Terkait</label>
-                            <textarea class="form-control mb-2" name="" rows="4"></textarea>
+                            <textarea class="form-control mb-2" name="peraturan_terkait" rows="4"></textarea>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label>Sertifikat Lain yang Dimiliki</label>
-                            <textarea class="form-control mb-2" name="" rows="4"></textarea>
+                            <textarea class="form-control mb-2" name="sertifikasi_lain" rows="4"></textarea>
                         </div>
                 </div>
 

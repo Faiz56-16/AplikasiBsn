@@ -9,4 +9,5 @@ Route::get('/', [Dashboard::class, 'index'])->name('dashboard');
 
 //DATA UMK
 Route::get('/profil', [Profilumk::class ,'index'])->name('profil');
-Route::get('/profil/tambah', [Profilumk::class ,'store'])->name('profil.tambah');
+Route::get('/profil/tambah', [Profilumk::class ,'create'])->name('profil.tambah');
+Route::post('/profil', [Profilumk::class ,'store'])->name('profil.store');

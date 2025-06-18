@@ -18,13 +18,17 @@
                             <li class="breadcrumb-item active" aria-current="page">Profil UMKM</li>
                         </ol>
                     </nav>
+                    
                 </div>
             </div>
         </div>
 
         <section class="section">
             <div class="card">
-
+                <div class="card-header">
+                    <h4 class="card-title">Form Data UMKM</h4>
+                     <a href="{{ route('profil.tambah') }}" class="btn btn-primary btn-sm text-white">Tambah</a>
+                </div>
                 <div class="card-body">
                     <form>
                         <div class="row">
@@ -43,7 +47,7 @@
                                 <input type="text" class="form-control" name="alamat">
                             </div>
                             <div class="col-md-1 mb-3 d-flex align-items-end">
-                               <a href="{{ route('profil.tambah') }}" class="btn btn-primary btn-sm text-white w-100" style="height: 38px;">Detail</a>
+                               <a href="" class="btn btn-primary btn-sm text-white w-100" style="height: 38px;">Detail</a>
 
                             </div>
                         </div>

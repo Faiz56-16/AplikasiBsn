@@ -7,14 +7,16 @@ use Illuminate\Http\Request;
 
 class Profilumk extends Controller
 {
-    public function index(){
-
+    public function index()
+    {
+        $data_umk = Umk::all();
         return view('DataUMK.DataUMK');
-
     }
 
-    public function store(){
-
+    public function create()
+    {
+        $data_umk = Umk::all();
+        $legalitas = Legalitas::all();
         return view('DataUMK.store');
     }
 
