@@ -24,26 +24,23 @@
 
         <section class="section">
             <div class="card">
-              
+
                 <div class="card-body">
                     <form>
                         <div class="row">
                             <div class="col-md-3 mb-3">
                                 <label>Nama UMKM</label>
-                                <input type="text" class="form-control" name="">
+                                <input type="text" class="form-control" name="nama_umkm">
                             </div>
-                            <div class="col-md-3 mb-3"> <!-- Farhat cinta guning -->
+                            <div class="col-md-3 mb-3">
                                 <label>No HP</label>
-                                <input type="text" class="form-control" name=>
+                                <input type="text" class="form-control" name="no_hp">
                             </div>
                             <div class="col-6 mb-3">
                                 <label>Alamat</label>
-                                <input type="text" class="form-control" name=>
+                                <input type="text" class="form-control" name="alamat">
                             </div>
-                          
-
-                        <a href="#" class="btn btn-primary mt-3">Kembali</a>
-                    </form>
+                        </div>
                 </div>
             </div>
         </section>

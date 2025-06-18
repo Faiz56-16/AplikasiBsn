@@ -47,9 +47,9 @@
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Legalistas Usaha</label>
-<div class="col-md-6 mb-3">
-<br>
 
+                                <div class="col-md-6 mb-3">
+                                <br>
                                 <!-- Checkbox -->
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" id="nib" onchange="toggleField('nib')">
@@ -115,22 +115,26 @@
 
                             <div class="col-md-6 mb-3">
                                 <label>Jumlah Tenaga Kerja</label>
-                                <input type="text" class="form-control" name=>
+                                <input type="number" class="form-control" name=>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Jangkauan Distribusi & Pemasaran</label>
-                                <input type="text" class="form-control" name=>
+                                <textarea class="form-control mb-2" name="jangkauan_distribusi_pemasaran_teks" rows="4" placeholder="Daerah pemasaran lokal,luar kota, ekspor..."></textarea>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Permodalan</label>
-                                <input type="text" class="form-control" name=>
+                                <textarea class="form-control mb-2" name="" rows="4"></textarea>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Volume Produksi/Bulan</label>
-                                <input type="text" class="form-control" name=>
+                                <input type="number" class="form-control" name=>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Berpotensi Ekspor? Ke Negara?</label>
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="nib" onchange="toggleField('nib')">
+                                    <label class="form-check-label" for="nib">NIB</label>
+                                </div>
                                 <input type="text" class="form-control" name=>
                             </div>
                             <div class="col-md-6 mb-3">
