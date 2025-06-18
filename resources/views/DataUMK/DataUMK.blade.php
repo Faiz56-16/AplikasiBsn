@@ -32,7 +32,7 @@
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label>Nama UMKM</label>
-                                <input type="text" class="form-control" value="UMKM Sari Rasa" >
+                                <input type="text" class="form-control" value="" >
                             </div>
                             <div class="col-md-6 mb-3"> <!-- Farhat cinta guning -->
                                 <label>No HP</label>
@@ -44,51 +44,51 @@
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Daftar Merk</label>
-                                <input type="text" class="form-control" value="Sari Rasa Food" >
+                                <input type="text" class="form-control" value="" >
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Struktur Organisasi</label>
-                                <input type="text" class="form-control" value="Direktur - Produksi - QC - Distribusi" >
+                                <input type="text" class="form-control" value="" >
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Jumlah Tenaga Kerja</label>
-                                <input type="number" class="form-control" value="12" >
+                                <input type="number" class="form-control" value="" >
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Jangkauan Distribusi</label>
-                                <input type="text" class="form-control" value="Kabupaten Sukabumi & Sekitarnya" >
+                                <input type="text" class="form-control" value="" >
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Permodalan</label>
-                                <input type="text" class="form-control" value="Dana Pribadi" >
+                                <input type="text" class="form-control" value="" >
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Volume Produksi per Bulan</label>
-                                <input type="text" class="form-control" value="500 Kg" >
+                                <input type="text" class="form-control" value="" >
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Berpotensi Ekspor</label>
-                                <input type="text" class="form-control" value="Ya" >
+                                <input type="text" class="form-control" value="" >
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Negara Tujuan Ekspor</label>
-                                <input type="text" class="form-control" value="Malaysia, Singapura" >
+                                <input type="text" class="form-control" value="" >
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>SNI Terkait</label>
-                                <input type="text" class="form-control" value="SNI 01-3544-2004" >
+                                <input type="text" class="form-control" value="" >
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Peraturan Terkait</label>
-                                <input type="text" class="form-control" value="Peraturan BPOM RI No. 11 Tahun 2019" >
+                                <input type="text" class="form-control" value="" >
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Sertifikasi Lain</label>
-                                <input type="text" class="form-control" value="Sertifikat Halal, PIRT" >
+                                <input type="text" class="form-control" value="" >
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Skema Sertifikasi</label>
-                                <input type="text" class="form-control" value="SNI Pangan Olahan" >
+                                <input type="text" class="form-control" value="" >
                             </div>
                         </div>
 
