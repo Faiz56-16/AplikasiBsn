@@ -26,9 +26,9 @@ class Profilumk extends Controller
     public function detailumk($id)
     {
         $data_umk = Umk::findOrFail($id);
-        $legal = Legalitas::where('profil_umkm_id', $id)->first(); // ambil legalitas sesuai profil
+        
 
-        return view('DetailUmk.detailUmk', compact('data_umk', 'legal'));
+        return view('DetailUmk.detailUmk', compact('data_umk'));
     }
 
     // Simpan data UMK baru
