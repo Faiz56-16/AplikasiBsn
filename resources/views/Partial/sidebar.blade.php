@@ -34,7 +34,7 @@
                             </a>
                             <ul class="submenu ">
                                 <li class="submenu-item ">
-                                    <a href="form-element-input.html">Input</a>
+                                    <a href="{{ route('profil') }}">Profil</a>
                                 </li>
                                 <li class="submenu-item ">
                                     <a href="form-element-input-group.html">Input Group</a>
