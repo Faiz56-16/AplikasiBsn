@@ -48,7 +48,7 @@
                                 <input type="text" class="form-control" name="alamat" value="{{ $umkm->alamat }}" readonly>
                             </div>
                             <div class="col-md-1 mb-3 d-flex align-items-end">
-                                <a href="{{ route('profil.detail') }}" class="btn btn-primary btn-sm text-white w-100" style="height: 38px;">Detail</a>
+                                <a href="{{ route('profil.detail', ['id' => $umkm->id]) }}" class="btn btn-primary btn-sm text-white w-100" style="height: 38px;">Detail</a>
                             </div>
                         </div>
                     </form>
