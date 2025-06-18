@@ -1,3 +1,6 @@
+@extends('Layout.Layout')
+
+@section('content')
 
     <div id="app">
         <div id="main">
@@ -252,7 +255,7 @@
                                         <img src="assets/images/faces/1.jpg">
                                     </div>
                                     <div class="name ms-4">
-                                        <h5 class="mb-1">John Dodol</h5>
+                                        <h5 class="mb-1">John Pork</h5>
                                         <h6 class="text-muted mb-0">@dodoljohn</h6>
                                     </div>
                                 </div>
@@ -277,3 +280,5 @@
            
         </div>
     </div>
+
+    @endsection

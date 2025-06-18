@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Mazer Admin Dashboard</title>
+    <title>Dashboard Mango Mango Mango</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -18,9 +18,22 @@
     <link rel="shortcut icon" href="{{asset('assets/images/favicon.svg')}}" type="image/x-icon">
 </head>
 <body>
-    
+    <!--SIDEBAR-->
     @include('partial.sidebar')
 
+    <!--CONTENT BODY-->
+    <div class="content-wrapper">
+      <section class="content">
+        <div class="container-fluid">
+          @yield('content')
+        </div>
+      </section>
+    </div>
+
+     <!-- Footer -->
+    @include('partial.footer')
+
+    </div>
 
 </body>
     <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
