@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="{{ asset('assets/vendors/perfect-scrollbar/perfect-scrollbar.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendors/bootstrap-icons/bootstrap-icons.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
+        <link rel="stylesheet" href="{{ asset ('public/assets/toastr/toastr.min.css')}}">
     <link rel="shortcut icon" href="{{ asset('assets/images/favicon.svg') }}" type="image/x-icon">
 </head>
 
@@ -39,6 +40,18 @@
     <script src="{{ asset('assets/vendors/apexcharts/apexcharts.js') }}"></script>
     <script src="{{ asset('assets/js/pages/dashboard.js') }}"></script>
     <script src="{{ asset('assets/js/main.js') }}"></script>
+    <script src="{{ asset ('assets/toastr/toastr.min.js') }}"></script>
+    <script src="{{ asset ('js/toastr.js') }}"></script>
+
+        <script>
+        window.Laravel = {
+            sessionMessages: {
+                success: @json(session('success')),
+                error: @json(session('error')),
+                errors: @json($errors -> all())
+            }
+        };
+    </script>
 </body>
 
 </html>

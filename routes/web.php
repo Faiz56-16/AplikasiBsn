@@ -11,3 +11,6 @@ Route::get('/', [Dashboard::class, 'index'])->name('dashboard');
 Route::get('/profil', [Profilumk::class ,'index'])->name('profil');
 Route::get('/profil/tambah', [Profilumk::class ,'create'])->name('profil.tambah');
 Route::post('/profil', [Profilumk::class ,'store'])->name('profil.store');
+
+// DETAIL UMK 
+Route::get('/Detail/Profile', [Profilumk::class,'detailumk'])->name('profil.detail');

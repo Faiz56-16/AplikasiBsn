@@ -20,6 +20,14 @@ class Profilumk extends Controller
         $legal = Legalitas::all();
         return view('DataUMK.store', compact('data_umk', 'legal'));
     }
+
+    public function detailumk()
+    {
+        $data_umk = Umk::all();
+        $Legal = Legalitas::all();
+
+        return view('DetailUmk.detailUmk', compact('data_umk','Legal'));
+    }
     public function store(Request $request)
     {
         $validated = $request->validate([
@@ -69,8 +77,12 @@ class Profilumk extends Controller
             'psat' => $request->psat,
             'psah' => $request->psah,
             'izin_edar' => $request->izin_edar,
+
+            
             // Handle sertifikat halal upload
         ]);
-        return redirect()->route('profil');         
+
+        
+        return redirect()->route('profil')->with('success', 'produk berhasil disimpan');         
     }
 }
