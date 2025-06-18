@@ -47,15 +47,8 @@
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Legalistas Usaha</label>
-                                <input type="text" class="form-control" name=>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label>Izin Edar</label>
-                                <input type="text" class="form-control" name="izin_edar">
-                            </div>
-
-                            <div class="col-md-6 mb-3">
-                                <label>Izin Edar</label><br>
+<div class="col-md-6 mb-3">
+<br>
 
                                 <!-- Checkbox -->
                                 <div class="form-check">
@@ -99,6 +92,9 @@
                                     field.style.display = checkbox.checked ? 'block' : 'none';
                                 }
                             </script>
+                            </div>
+
+                            
 
                             <div class="col-md-6 mb-3">
                                 <label>Tanda Daftar Merk</label>
@@ -116,7 +112,7 @@
 
                             <input type="file" class="form-control" name="struktur_organisasi_file">
                         </div>
-                        
+
                             <div class="col-md-6 mb-3">
                                 <label>Jumlah Tenaga Kerja</label>
                                 <input type="text" class="form-control" name=>

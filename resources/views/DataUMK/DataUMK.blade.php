@@ -24,24 +24,19 @@
 
         <section class="section">
             <div class="card">
-                <div class="card-header">
-                    <h4 class="card-title">Form Dummy Data UMKM</h4>
-                    <br><button type="button" class="btn btn-primary" data-toggle="modal" data-target="">
-                        Tambah Data
-                    </button></br>
-                </div>
+              
                 <div class="card-body">
                     <form>
                         <div class="row">
-                            <div class="col-md-6 mb-3">
+                            <div class="col-md-3 mb-3">
                                 <label>Nama UMKM</label>
                                 <input type="text" class="form-control" name="">
                             </div>
-                            <div class="col-md-6 mb-3"> <!-- Farhat cinta guning -->
+                            <div class="col-md-3 mb-3"> <!-- Farhat cinta guning -->
                                 <label>No HP</label>
                                 <input type="text" class="form-control" name=>
                             </div>
-                            <div class="col-12 mb-3">
+                            <div class="col-6 mb-3">
                                 <label>Alamat</label>
                                 <input type="text" class="form-control" name=>
                             </div>
