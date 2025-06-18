@@ -71,6 +71,6 @@ class Profilumk extends Controller
             'izin_edar' => $request->izin_edar,
             // Handle sertifikat halal upload
         ]);
-        return redirect()->route('profil');     
+        return redirect()->route('profil');         
     }
 }
