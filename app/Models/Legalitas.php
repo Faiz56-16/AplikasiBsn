@@ -9,7 +9,7 @@ class Legalitas extends Model
 {
     use HasFactory;
 
-        protected $table = 'legalitas_usaha';
+    protected $table = 'legalitas_usaha';
     protected $primaryKey = 'id';
     public $incrementing = true;
     public $timestamps = false;
@@ -24,6 +24,8 @@ class Legalitas extends Model
         'psat',
         'psah',
     ];
-
-    
+    public function profil()
+    {
+        return $this->belongsTo(Umk::class);
+    }
 }

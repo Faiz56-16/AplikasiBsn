@@ -30,6 +30,8 @@ class Umk extends Model
         'sertifikasi_lain',
         'skema_sertifikasi',
     ];
-
-
+    public function legalitas()
+    {
+        return $this->hasOne(Legalitas::class);
+    }
 }
