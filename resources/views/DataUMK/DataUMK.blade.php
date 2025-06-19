@@ -31,7 +31,7 @@
                 </div>
                 <div class="card-body">
                     @foreach($data_umk as $umkm)
-                    <form> 
+                    <form>
                         <div class="row">
                             <div class="col-md-3 mb-3">
                                 <label>Nama UMKM</label>
@@ -42,13 +42,16 @@
                                 <input type="text" class="form-control" name="no_hp" value="{{ $umkm->no_hp }}" readonly>
                             </div>
 
-                            <!-- Kolom Alamat dan Tombol di Satu Baris -->
                             <div class="col-md-5 mb-3">
                                 <label>Alamat</label>
                                 <input type="text" class="form-control" name="alamat" value="{{ $umkm->alamat }}" readonly>
                             </div>
                             <div class="col-md-1 mb-3 d-flex align-items-end">
-                                <a href="{{ route('profil.detail', ['id' => $umkm->id]) }}" class="btn btn-primary btn-sm text-white w-100" style="height: 38px;">Detail</a>
+                                <a href="{{ route('profil.detail', ['id' => $umkm->id]) }}"
+                                    class="btn btn-primary btn-sm w-100"
+                                    style="height: 38px; line-height: 28px;">
+                                    Detail
+                                </a>
                             </div>
                         </div>
                     </form>
